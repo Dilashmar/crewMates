@@ -1,0 +1,40 @@
+.Card {
+    background-color: #fff; /* Set the background color to white */
+    border: 1px solid rgba(153, 153, 153, 0.497);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    margin-bottom: 25px;
+    width: calc(25% - 30px); /* Set the width to 25% minus margins for 4 cards in a row */
+    text-align: center;
+    margin-right: 15px; /* Set the right margin between cards */
+    display: inline-block; /* Make the cards display inline-block */
+    vertical-align: top; /* Align cards to the top of the container */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+  }
+  
+  .Card:nth-child(4n) {
+    margin-right: 0; /* Remove the right margin for the last card in each row */
+  }
+  
+  @media (max-width: 768px) {
+    .Card {
+      width: 100%; /* Set the width to 100% on smaller screens for a single column layout */
+      margin-right: 0; /* Remove the right margin */
+    }
+  }
+  
+  .character-image {
+    width: 70%; /* Set the image width to 100% of its container */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    max-width: 100%; /* Ensure the image does not exceed the container's width */
+    max-height: 150px; /* Limit the maximum height of the image */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 12px;
+  }
+  
+  h2{
+    color: black;
+  }
